@@ -1,56 +1,84 @@
 .container{
-    width: 100%;
-    background-color: transparent;
-    height: 100vh;
+    height: 100vh;/*a altura toda*/
+    width: 100vw;/*largura no monitor todo*/
+    display: flex;/*faz com que as coisas fiquem lado a lado*/
+    flex-direction: row;
+    background-color: #FBF8F4;
+    background-image: url(../assets/image.png);
+    background-size: contain; /* Redimensiona a imagem para caber no contêiner */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: right; /* Posiciona a imagem à direita */
+    background-position: absolute; /* Posiciona a imagem de acordo com o contêiner */
+    background-attachment: fixed;
+}
+.right-login{
+    width: 62%;
+    align-items: flex-end;
+}
+.leftlogin{
+    display: flex;/*coloca tudo em fila*/
+    flex-direction: column;/*coloca em coluna*/
+    align-items:center;/*centraliza os campos de leftlogin*/
+    height: 100vh;/*altura*/
+    width: 38%;/*largura*/
+    /*background-color: aqua;*/
+}
+.links{
+   /* background-color: blueviolet;*/
     display: flex;
-    position: relative;
+    flex-direction: column;   
+    margin-top: auto; /*foi para o limite inferior do campo*/
+    margin-right: auto;/*foi para o limite esquerdo do campo*/
 }
-
+.cardLogin{
+    margin-top: 10%;
+    height: 900px;
+    width: 70%;
+    /*background-color:bisque;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
 .container h1{
-    text-align: center;
-    font-size: 60px;
-    color: #4B626C;
-    height: 120px;
-}
-
-.container .input-field{
-    position: relative;
-    width: 100%;
-    height: 5%;
-    margin: 30px auto;
+    font-size: 55px;/*tamanho da fonte*/
+    color: #4B626C;/*cor do escrito*/
+    font-weight: 400;/*afina a letra*/
 }
 
 .input-field input{
-    color: #97A4A2;
-    width: 100%;
-    height: 100%;
-    background-color: #EFEFEF;
-    outline: none;
-    border: 2px solid rgba(255,255,255,0.2);
-    border-radius: 5px;
-    font-size: 30px;
-    padding: 25px;
+    color: #97A4A2;/*cor da letra dentro da caixa*/
+    width: 100%;/*largura do caxote*/
+    height: 50px;/*altura do caxote*/
+    border: none;/*sem borda*/
+    border-radius: 0.2vw;/*borda arredondada*/
+    padding: 1vw;/*para o escrito dentro da caixa nao ficar colado na borda*/
+    font-size: 20px;/*tamanho da fonte dos escritos dentro da caixa*/
+    background: #EFEFEF;/*fundo da caixa*/
+    box-shadow: 0vw 0.2vw 1vw #75727256;/*sombra das caixa*/
+    outline: none;/*para nao aparcer quando seleciona o campo*/
+    box-sizing: border-box;/**/
+    margin-top: 5vw;/*espacar entre as caixas*/
 }
 
 .input-field input::placeholder{
-    color: #97A4A2;
+    color: #97A4A2;/*cor da letra que fica mostrando*/
+}
+.input-field{
+    width: 100%;/*para ocupar o campo todo de cardlogin*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;/*para os campos ficar alinhado no final e consq a flexa ficar no final*/
 }
 .container button{
-    width: 15%;
-    height: 42px;
-    position: relative;
-    padding-right: 10px; 
-    cursor: pointer;
-    font-size: 20px;
-    left: 82%;
-    border: none;
-    color: #4B626C;
-    border-radius: 5px;
-}
-.container .new-account {
-    position: relative; /* Alterando para posição absoluta */
-    top: 500px; /* Ajuste conforme necessário */
-    font-size: 20px;
+    margin-top: 10%;/*espacar do campo da senha*/
+    width: 5vw;/*largura do botao*/
+    cursor: pointer;/*aparecer ponteiro quando passar em cima*/
+    font-size: 40px;/*aumentar a fecha*/
+    border: none;/*sem borda em volta*/
+    color: #4B626C;/*cor da flecha*/
+    border-radius: 5px;/*a borda ter volta*/
+    background-color: transparent;
 }
 
 .new-account a {
@@ -62,12 +90,6 @@
     text-decoration: underline;
 }
 
-.container .forget {
-    position: relative; /* Alterando para posição absoluta */
-    top: 491px;
-    font-size: 20px;
-}
-
 .forget a {
     color: #4B626C;
     text-decoration: none;
@@ -75,4 +97,33 @@
 
 .forget a:hover {
     text-decoration: underline;
+}
+@media screen and (max-width: 780px){
+
+    .container{
+        background-image: none;
+    }
+    .right-login{
+        display: none;
+    }
+    .leftlogin{
+        height:100vh;
+        width: 100vw;
+        
+    }
+    .links{
+        align-items: center;   
+        margin-right: 0%;     
+     }
+    
+}
+@media screen and (max-width: 425px){
+    .cardLogin{
+        margin-top: 50%;
+        height: 350px;
+        width: 90%;
+    }
+    .input-field{
+        align-items: center;
+    }
 }
