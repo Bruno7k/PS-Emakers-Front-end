@@ -1,0 +1,27 @@
+.card-recuperar{
+    margin-top: 10%;
+    height: 88vh;
+    width: 70%;
+    /*background-color:bisque;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container h2{
+    font-size: 55px;/*tamanho da fonte*/
+    color: #4B626C;/*cor do escrito*/
+    font-weight: 400;/*afina a letra*/    
+}
+.container h3{
+    font-size: 55px;/*tamanho da fonte*/
+    color: #4B626C;/*cor do escrito*/
+    font-weight: 400;/*afina a letra*/    
+}
+.login a {
+    color: #4B626C;
+    text-decoration: none;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}

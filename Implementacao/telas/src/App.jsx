@@ -1,5 +1,7 @@
 import { useState } from 'react'
-import Login from './Components/Login'
+import Login from './pages/Login'
+import Recuperar from './pages/Recuperar'
+import Registrar from './pages/Registrar'
 import "./App.css"
 
 function App() {
@@ -7,7 +9,7 @@ function App() {
 
   return (
     <div className='App'>
-      <Login/>
+      <Registrar/>
     </div>
   )
 }

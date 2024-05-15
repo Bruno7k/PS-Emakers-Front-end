@@ -9,13 +9,13 @@
     background-repeat: no-repeat; /* Impede a repetição da imagem */
     background-position: right; /* Posiciona a imagem à direita */
     background-position: absolute; /* Posiciona a imagem de acordo com o contêiner */
-    background-attachment: fixed;
+    background-attachment: auto;
 }
 .right-login{
     width: 62%;
     align-items: flex-end;
 }
-.leftlogin{
+.left-login{
     display: flex;/*coloca tudo em fila*/
     flex-direction: column;/*coloca em coluna*/
     align-items:center;/*centraliza os campos de leftlogin*/
@@ -30,9 +30,9 @@
     margin-top: auto; /*foi para o limite inferior do campo*/
     margin-right: auto;/*foi para o limite esquerdo do campo*/
 }
-.cardLogin{
+.card-login{
     margin-top: 10%;
-    height: 900px;
+    height: 88vh;
     width: 70%;
     /*background-color:bisque;*/
     display: flex;
@@ -51,14 +51,14 @@
     width: 100%;/*largura do caxote*/
     height: 50px;/*altura do caxote*/
     border: none;/*sem borda*/
-    border-radius: 0.2vw;/*borda arredondada*/
+    border-radius: 5px;/*borda arredondada*/
     padding: 1vw;/*para o escrito dentro da caixa nao ficar colado na borda*/
     font-size: 20px;/*tamanho da fonte dos escritos dentro da caixa*/
     background: #EFEFEF;/*fundo da caixa*/
-    box-shadow: 0vw 0.2vw 1vw #75727256;/*sombra das caixa*/
+    box-shadow: 0px 0.2px 20px #25252556;/*sombra das caixa*/
     outline: none;/*para nao aparcer quando seleciona o campo*/
     box-sizing: border-box;/**/
-    margin-top: 5vw;/*espacar entre as caixas*/
+    margin-top: 5vh;/*espacar entre as caixas*/
 }
 
 .input-field input::placeholder{
@@ -106,7 +106,7 @@
     .right-login{
         display: none;
     }
-    .leftlogin{
+    .left-login{
         height:100vh;
         width: 100vw;
         
@@ -118,7 +118,7 @@
     
 }
 @media screen and (max-width: 425px){
-    .cardLogin{
+    .card-login{
         margin-top: 50%;
         height: 350px;
         width: 90%;
