@@ -8,7 +8,8 @@ body {
   height: 100vh;
   width: 100vw;
   font-family: 'Montserrat', sans-serif;
-  background-color: #FBF8F3;
+  /*background-image: linear-gradient(to right, #FBF8F4 58%, #4B626C 42%); /* Define um gradiente linear */
+  background-color: #FBF8F4;
 }
 
 

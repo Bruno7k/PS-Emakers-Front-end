@@ -1,0 +1,374 @@
+.container2{
+    height: 100vh;/*a altura toda*/
+    width: 100vw;/*largura no monitor todo*/
+    display: flex;/*faz com que as coisas fiquem lado a lado*/
+    flex-direction: column;
+}
+.parte-superior{
+    background-color: #FBF8F4;
+    display: flex;
+    width: 100vw;
+    height: 98px;
+    box-shadow: 0px 1px 5px rgb(34, 32, 32);
+    z-index: 5;
+}
+.menu{
+    display: none;
+}
+.barra{
+    width: 1px;
+    height: 40%;
+    background: #4B626C;
+}
+.nav-list{
+    width: 70vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.nav{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.hamburguer{
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #000000;
+    cursor: pointer;
+}
+.hamburguer::before, .hamburguer::after{
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #000000;
+    margin-top: 5px;
+}
+.link a{
+    text-decoration: none;
+    color: #4B626C;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 39.01px;
+}
+.input{
+    display: flex;
+    flex-direction: row;
+}
+.input input{
+    border: none;
+    height: 40px;
+    width: 165px;
+    border-radius: 15px;
+    background: #97A4A273;
+    color: #97A4A2;/*cor da letra dentro da caixa*/
+    padding: 1vw;/*para o escrito dentro da caixa nao ficar colado na borda*/
+    font-size: 20px;/*tamanho da fonte dos escritos dentro da caixa*/
+    outline: none;/*para nao aparcer quando seleciona o campo*/
+    padding-right: 18%;
+}
+.input .lupa{
+    position: relative;
+    right: 30px;
+    bottom: -9px;
+    font-size: 1.4em;
+}
+
+.icone{
+    margin-left: 3%;
+}
+.iconez{
+    width: 100px;
+    height: 100%;
+}
+/*configurando a parte superior*/
+@media screen and (max-width: 1160px){
+    .icone{
+        display: none;
+    }
+    .barra{
+        display: none;
+    }
+    .nav-list{
+        display: none;
+    }
+    .hamburguer{
+        display: block;
+    }
+    .nav{
+        justify-content: space-between;
+        margin-left: 30px ;
+    }
+    .menu{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:#4B626C;
+        opacity: 0;
+        pointer-events: none;
+        clip-path: circle(100px at 1% 1%);
+        transition: 0.4s ease-out;
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+            font-weight: 50;
+            font-size: 20px;
+        }
+        nav a{
+            text-decoration: none;
+            color : #fff;
+        }
+    }
+    .menu .hamburguer{
+        position: absolute;
+        top: 1.2rem;
+        left: 1.9rem;
+        
+    }
+    .menu.visivel{
+        clip-path: circle(1500px at 10% 1%);
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .parte-inferior.visivel{
+        display: none;
+    }
+}
+.parte-inferior{
+    display: flex;
+    flex-direction: row;
+    height: 90.2%;
+    width: 100vw;
+}
+.parte-esquerda{
+    width: 58%;
+    height: 100%;
+    background-color: #FBF8F4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;/*coloca a linha no meio*/
+    align-items: center;/*coloca a coluna no meio*/
+}
+.caixa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 647px;
+    height: 468px;
+}
+.caixa h1{
+    font-size: 40px;
+    /*font-size: 3vw;/*tamanho da fonte*/
+    color: #4B626C;/*cor do escrito*/
+    font-weight: 500;/*afina a letra*/
+    
+}
+.caixa h2{
+    font-size:25px;
+    /*font-size: 2.2vw;/*tamanho da fonte*/
+    color: #4B626C;/*cor do escrito*/
+    font-weight: 400;/*afina a letra*/
+}
+.caixa button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    color: #FBF6F0;
+    font-size: 30px;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: start;
+    padding-left: 0.5VW;
+}
+.tipo1{
+    background-color:#4B626C;
+}
+.excluir .lixo{
+    position: relative;
+    right: -215px;
+    bottom: 35px;
+    font-size: 25px;
+    color: #FBF6F0;
+}
+.alterar .alterar{
+    position: relative;
+    right: -215px;
+    bottom: 35px;
+    font-size: 25px;
+    color: #FBF6F0;
+
+}
+.tipo2{
+    background: #5c666473;
+}
+/* configurando a parte inferior-esquerda*/
+@media screen and (max-width: 1160px){
+    .parte-esquerda{
+        height: auto;
+    }
+    .caixa{
+        margin-top: -100%;
+        width: 77%;
+        height: 50%;
+        justify-content: space-evenly;
+    }
+    .caixa button{
+        width: 13.5vw;
+        font-size: 2vw;
+    }
+    .excluir .lixo{
+        display: none;
+    }
+    .alterar .alterar{
+        display: none;
+    }
+}
+.parte-direita{
+    width: 42%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;/*coloca a linha no meio*/
+    align-items: center;/*coloca a coluna no meio*/
+    background-color:#4B626C;
+    position: relative;
+}
+.card-jogos h1{
+    font-size: 2.3vw;
+    font-weight: 400;
+    color: #FBF6F0;
+    margin-bottom: 10%;
+}
+.card-jogos{
+    width: 78%;
+    height: 72%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.jogos h2{
+    font-size: 18px;
+    font-weight: 400;
+}
+.img-jogo{
+    height: 250px;
+    width: 190px;
+}
+.jogos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;/*espacamento entre os itens porem nao na margem*/
+    align-items: center;
+    flex-wrap: wrap;
+}
+.jogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.jogo h2{
+    margin-top: 10px;
+    margin-bottom: 45px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FBF6F0;
+}
+
+.carrinho {
+    position: relative;
+    color: #FBF6F0;
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: 15px;
+    bottom: -60px;
+    
+}
+/*func alterar dados*/
+.alterar-dados{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:#4B626C;
+    opacity: 0;
+    pointer-events: none;
+    clip-path: circle(100px at 1% 1%);
+    transition: 0.4s ease-out;
+}
+.alterar-dados .dados{
+    height: 30%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.alterar-dados .dados .altDados{
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    padding: 1vw;
+    font-size: 15px;
+    outline: none;
+    background: #EFEFEF;
+    color: #97A4A2;
+    box-shadow: 0px 15px 10px #00000056;
+    margin-top: 5vh;
+}
+.altDados::placeholder{
+    color: #97A4A2;
+}
+.alterar-dados .sair{
+    position: fixed;
+    border: none;
+    height: 3%;
+    width: 3%;
+    border-radius: 1VW;
+    margin-top: -50%;
+    margin-left: -90%;
+}
+.alterar-dados.visivel{
+    clip-path: circle(1800px at 10% 1%);
+    opacity: 1;
+    pointer-events: auto;
+}
+/*configurando a parte inferior direita*/
+@media screen and (max-width: 1160px){
+    .jogos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-jogos{
+        margin-top: 20%;
+    }
+    .container2{
+        height: auto;
+    }
+    .carrinho{
+        bottom: auto;
+    }
+
+}

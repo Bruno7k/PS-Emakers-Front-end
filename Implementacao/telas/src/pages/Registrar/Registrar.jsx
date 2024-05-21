@@ -1,6 +1,12 @@
+import {Link, useNavigate} from 'react-router-dom'
 import './Registrar.css'
 
-const Registrar =() =>{
+
+function Registrar (){
+    const navigate = useNavigate();
+    const handleInicial =()=>{
+      return navigate("/inicial");
+    }
     return(
         <div className='container'>
             <div className='left-login'>
@@ -20,11 +26,11 @@ const Registrar =() =>{
                     </div>
                     <div className='input-field'>
                         <input type="password" placeholder="Confirmar Senha"/>  
-                        <button>→</button> 
+                        <button onClick={handleInicial}>→</button>
                     </div>
                     <div className='links'>
                         <div className='login'>
-                            <a href='#'>Fazer Login</a>
+                            <Link to={'/'} >Fazer Login</Link>
                         </div>
                     </div> 
                 </div>

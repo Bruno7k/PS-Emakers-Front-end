@@ -1,6 +1,11 @@
+import {Link, useNavigate} from "react-router-dom";
 import "./Recuperar.css";
 
-const Recuperar =() =>{
+function Recuperar(){
+    const navigate = useNavigate();
+    const handleInicial =()=>{
+      return navigate("/inicial");
+    }
 return(
     <div className='container'>
         <div className='left-login'>
@@ -9,14 +14,14 @@ return(
                 <h3>Conta</h3>
                 <div className="input-field">
                     <input type="email" placeholder="E-mail"/>   
-                    <button>→</button> 
+                    <button onClick={handleInicial}>→</button>
                 </div>
                 <div className='links'>
                     <div className='new-account'>
-                        <a href='#'>Criar Conta</a>
+                        <Link to={'/registrar'} >Criar Conta</Link>
                     </div>
                     <div className='login'>
-                        <a href='#'>Fazer Login</a>
+                        <Link to={'/'} >Fazer Login</Link>
                     </div>
                 </div>    
             </div>    
