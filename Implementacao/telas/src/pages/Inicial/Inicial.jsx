@@ -9,6 +9,7 @@ import {FaSearch} from 'react-icons/fa'
 import {MdEdit} from 'react-icons/md'
 import { FaRegTrashAlt } from 'react-icons/fa'
 import { TfiShoppingCart } from "react-icons/tfi";
+import { Link } from 'react-router-dom'
 
 function Inicial(){
     const [menuVisivel, setMenuVisivel] = useState(false);
@@ -35,7 +36,7 @@ function Inicial(){
                     <a href='#'>Lançamentos</a>
                     <a href='#'>Populares</a>
                     <a href='#'>Gêneros</a>
-                    <a href='#'>Promoções</a>
+                    <Link to={'/promocao'}>Promoções</Link>
                     <a href='#'>Conta</a>
                 </nav>
             </div>
@@ -67,7 +68,7 @@ function Inicial(){
                         </div>
                         <div className='barra'/>
                         <div className='link'>
-                            <a href='#'>Promoções</a>
+                            <Link to={'/promocao'}>Promoções</Link>
                         </div>
                         <div className='barra'/>
                         <div className='link'>

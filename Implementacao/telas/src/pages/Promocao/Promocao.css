@@ -1,0 +1,184 @@
+.container3{
+    height: 100vh;/*a altura toda*/
+    width: 100vw;/*largura no monitor todo*/
+    display: flex;/*faz com que as coisas fiquem lado a lado*/
+    flex-direction: column;
+}
+.inferior{
+    width: 100vw;
+    height: 90.2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-inferior{
+    height: 530px;
+    width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#4B626C;
+    border-radius: 10px;
+    position: absolute;
+}
+.bola{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #4B626C;
+    border-radius: 50%;
+    position: absolute;
+    left: -50px;
+    top: -50px;
+}
+.bola p{
+    font-size: 32px;
+    font-weight: 500;
+    color:#FBF6F0
+}
+.desconto-preco{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap:15px;
+    right: 425px;
+    bottom: 22PX;
+}
+.desconto-preco p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#4B626C;
+    color:#FCFAFA;
+    height: 25px;
+    width: 65px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.desconto-preco p1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FCFAFA;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.carrinho-bola{
+    display: flex;
+    position: relative;
+    margin-top: 800px;
+    margin-left: auto;
+}
+.bola-carrinho{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-color: #4B626C;
+}
+.carrinhoB{
+    position: relative;
+    right: 55px;
+    top: 15px;
+    height: 41px;
+    width: 41px;
+    color:#FBF6F0
+}
+.campo-imagem{
+    height: 530px;
+    width: 900px;
+}
+.tela{
+    height: 100%;
+    width: 100%;
+}
+.campo-texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    height: 530px;
+    width: 400px;
+    border-radius: 5px;
+}
+.campo-texto h1{
+    font-weight: 600px;
+    font-size: 32px;
+    color: #FBF6F0;
+}
+.historia{
+    height: 290px;
+    width: 329px;
+}
+.campo-texto h2{
+    color: #FBF6F0;
+    font-size: 24px;
+    font-weight: 300;
+}
+.barra-texto{
+    background-color: #FBF6F0;
+    height: 2px;
+    width: 80%;
+}
+.botoes-texto{
+    display: flex;
+    flex-direction: column;
+    
+}
+.botoes-texto button{
+    width: 230px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    color: #4B626C;
+    font-size: 16px;
+    font-weight: 500;
+    padding-right: 40px;
+}
+.botoes-texto .carrinho1{
+    position:relative;
+    color:#4B626C;
+    left: 200px;
+    bottom:12px;    
+    font-size: 20px;
+}
+.botoes-texto .carrinho2{
+    position:relative;
+    color:#4B626C;
+    left: 200px;
+    bottom:7px;    
+    font-size: 20px;
+}
+.solicitar-reembolso{
+    opacity: 60%;
+    margin-bottom: -20px;
+}
+.adicionar-carrinho{
+    margin-bottom: -15px;
+}
+@media screen and (max-width: 1401px){
+    .container3{
+        height: 1400px;
+    }
+    .inferior{
+        height: 100%;
+    }
+    .card-inferior{
+        flex-direction: column;
+        width: 900px;
+        height: auto;
+    }
+    .desconto-preco{
+        top: 490px;
+        right: 20px;
+    }
+    .carrinho-bola{
+        margin-top: auto;
+        margin-bottom: 25px;
+    }
+}
