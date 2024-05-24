@@ -1,0 +1,11 @@
+.flecha{
+    margin-top: 10%;/*espacar do campo da senha*/
+    width: 5vw;/*largura do botao*/
+    cursor: pointer;/*aparecer ponteiro quando passar em cima*/
+    font-size: 40px;/*aumentar a fecha*/
+    border: none;/*sem borda em volta*/
+    color: #4B626C;/*cor da flecha*/
+    border-radius: 5px;/*a borda ter volta*/
+    background-color: transparent;
+    margin-left: auto;
+}

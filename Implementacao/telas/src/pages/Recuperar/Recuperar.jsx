@@ -1,28 +1,20 @@
-import {Link, useNavigate} from "react-router-dom";
 import "./Recuperar.css";
-
+import Input from '../../components/input/inputComponent';
+import Botao from '../../components/botoes/botaoFlexa';
+import LinkComponent from '../../components/links/links';
 function Recuperar(){
-    const navigate = useNavigate();
-    const handleInicial =()=>{
-      return navigate("/inicial");
-    }
+
 return(
     <div className='container'>
         <div className='left-login'>
             <div className="card-recuperar">
                 <h2>Recuperar</h2>
                 <h3>Conta</h3>
-                <div className="input-field">
-                    <input type="email" placeholder="E-mail"/>   
-                    <button onClick={handleInicial}>→</button>
-                </div>
+                <Input tipo="email" placeholder="E-mail"/> 
+                <Botao/>
                 <div className='links'>
-                    <div className='new-account'>
-                        <Link to={'/registrar'} >Criar Conta</Link>
-                    </div>
-                    <div className='login'>
-                        <Link to={'/'} >Fazer Login</Link>
-                    </div>
+                    <LinkComponent rota='/registrar' nome='Criar Conta'></LinkComponent>
+                    <LinkComponent rota='/' nome='Fazer Login'></LinkComponent>
                 </div>    
             </div>    
         </div> 

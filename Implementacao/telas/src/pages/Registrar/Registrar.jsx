@@ -1,38 +1,20 @@
-import {Link, useNavigate} from 'react-router-dom'
 import './Registrar.css'
-
-
+import Input from '../../components/input/inputComponent';
+import Botao from '../../components/botoes/botaoFlexa';
+import LinkComponent from '../../components/links/links';
 function Registrar (){
-    const navigate = useNavigate();
-    const handleInicial =()=>{
-      return navigate("/inicial");
-    }
     return(
         <div className='container'>
             <div className='left-login'>
                 <div className='card-registrar'>
                     <h1>Registrar</h1>
-                    <div className='input-field'>
-                        <input type="nome" placeholder="Nome de Usuario"/>  
-                    </div>
-                    <div className='input-field'>
-                        <input type="email" placeholder="E-mail"/>  
-                    </div>
-                    <div className='input-field'>
-                        <input type="cpf" placeholder="CPF"/>  
-                    </div>
-                    <div className='input-field'>
-                        <input type="password" placeholder="Senha"/>  
-                    </div>
-                    <div className='input-field'>
-                        <input type="password" placeholder="Confirmar Senha"/>  
-                        <button onClick={handleInicial}>→</button>
-                    </div>
-                    <div className='links'>
-                        <div className='login'>
-                            <Link to={'/'} >Fazer Login</Link>
-                        </div>
-                    </div> 
+                    <Input tipo="text" placeholder="Nome de Usuario"/>   
+                    <Input tipo="email" placeholder="E-mail"/> 
+                    <Input tipo="text" placeholder="CPF"/>
+                    <Input tipo="password" placeholder="Senha"/>   
+                    <Input tipo="password" placeholder="Confirmar Senha"/>      
+                    <Botao/>  
+                    <LinkComponent rota='/' nome='Fazer Login'></LinkComponent>
                 </div>
             </div>
         </div>

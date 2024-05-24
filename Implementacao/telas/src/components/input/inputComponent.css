@@ -1,0 +1,18 @@
+.inputComponent{
+    color: #97A4A2;/*cor da letra dentro da caixa*/
+    width: 100%;/*largura do caxote*/
+    height: 50px;/*altura do caxote*/
+    border: none;/*sem borda*/
+    border-radius: 5px;/*borda arredondada*/
+    padding: 1vw;/*para o escrito dentro da caixa nao ficar colado na borda*/
+    font-size: 20px;/*tamanho da fonte dos escritos dentro da caixa*/
+    background: #EFEFEF;/*fundo da caixa*/
+    box-shadow: 0px 0.2px 20px #25252556;/*sombra das caixa*/
+    outline: none;/*para nao aparcer quando seleciona o campo*/
+    box-sizing: border-box;/**/
+    margin-top: 5vh;/*espacar entre as caixas*/
+    
+}
+.inputComponent::placeholder{
+    color: #97A4A2;/*cor da letra que fica mostrando*/
+}
