@@ -1,0 +1,23 @@
+.container4{
+    height: 100vh;/*a altura toda*/
+    width: 100vw;/*largura no monitor todo*/
+    display: flex;/*faz com que as coisas fiquem lado a lado*/
+    flex-direction: column;
+}
+.parte-baixo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 98px);
+    position: relative;
+}
+.carrosel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px;
+}
+
+.lancamentos{
+    background-color: #4B626C;
+}

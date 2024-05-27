@@ -1,0 +1,50 @@
+.mySwiper {
+    width: 1323.39px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.swiper-wrapper {
+    display: flex;
+    transition-timing-function: ease; /* Ajusta a função de tempo da transição */
+    scroll-behavior: smooth; /* Garante transições suaves */
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 1323.39px;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 0%;
+}  
+.slide1{
+    flex-basis: 0%;
+}
+.slide2{
+    flex-basis: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.swiper-button-next,
+.swiper-button-prev{
+    color:#97A4A2;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 80px; /* Ajuste o tamanho se necessário */
+}
+/* Estiliza os bullets da paginação */
+.swiper-pagination-bullet {
+    width: 25px; /* Altere o tamanho conforme necessário */
+    height: 25px; /* Altere o tamanho conforme necessário */
+    background-color: #97a4a25e; /* Altere a cor conforme necessário */
+    opacity: 1;
+    margin: 5px; /* Espaçamento entre os bullets */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+}  
+  /* Estiliza o bullet ativo */
+.swiper-pagination-bullet-active {
+    background-color: #97A4A2; /* Altere a cor conforme necessário */
+} 

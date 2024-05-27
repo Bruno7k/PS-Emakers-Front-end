@@ -6,11 +6,11 @@ import deliver from '../../imagens/deliver-mars.png'
 import god from '../../imagens/god-of-war.png'
 import {MdEdit} from 'react-icons/md'
 import { FaRegTrashAlt } from 'react-icons/fa'
-import { TfiShoppingCart } from "react-icons/tfi"
 import Menu from "../../components/menu/menu"
+import Carrinho from "../../components/carrinho/carrinho"
 function Inicial(){
-    /*const [menuVisivel, setMenuVisivel] = useState(false);
-    const [telaVisivel, setTelaVisivel] = useState(false);*/
+    const [menuVisivel, setMenuVisivel] = useState(false);
+    const [telaVisivel, setTelaVisivel] = useState(false);
     const [alterarVisivel, setAlterarVisivel] = useState(false);
     const [nome, setNome] = useState("<<Nome do Usuário>>");
     const [email, setEmail] = useState("nomeusuario@email.com");
@@ -23,7 +23,7 @@ function Inicial(){
     /*const toggleMenu =()=>{
         setMenuVisivel(!menuVisivel);
         setTelaVisivel(!telaVisivel);
-      };*/
+    };*/
 
     return (
         <div className='container2'>
@@ -36,25 +36,22 @@ function Inicial(){
                     </div>
             </div>
             <Menu/>
-            {/*<div className={`parte-inferior ${telaVisivel ? "visivel" : ""}`} telaVisivel={telaVisivel}>*/}
-            <div className='parte-inferior'>
+            <div className={`parte-inferior ${telaVisivel ? "visivel" : ""}`} telaVisivel={telaVisivel}>
                 <div className='parte-esquerda'>
                     <div className='caixa'>
-                        <h1>Olá, maluco</h1>
-                        <h2>Seu email é cetamaluco</h2>
-                        <h2>Seu CPF é maluco123456</h2>
-                        <div className='botoes'>
-                            <div className='alterar'>
-                                <button onClick={toggleDados} className='tipo1'>Alterar Dados </button>
-                                <MdEdit className='alterar'/>
-                            </div>
-                            <div className='excluir'>
-                                <button className='tipo1'>Excluir Conta </button>
-                                <FaRegTrashAlt className='lixo'/>
-                            </div>
-                            <div className='Tela do admin'>
-                                <button className='tipo2'>Tela do admin </button>
-                            </div>
+                        <h1>Olá, {nome}</h1>
+                        <h2>Seu email é {email}</h2>
+                        <h2>Seu CPF é {CPF}</h2>
+                        <div className='alterar'>
+                            <button onClick={toggleDados} className='tipo1'>Alterar Dados </button>
+                            <MdEdit className='alterar'/>
+                        </div>
+                        <div className='excluir'>
+                            <button className='tipo1'>Excluir Conta </button>
+                            <FaRegTrashAlt className='lixo'/>
+                        </div>
+                        <div className='Tela do admin'>
+                            <button className='tipo2'>Tela do admin </button>
                         </div>
                     </div>
                 </div>
@@ -80,10 +77,7 @@ function Inicial(){
                             </div>
                         </div>
                     </div>
-                    <div className='circulo-carrinho'>
-                        <div className='bola-vazada'></div>
-                        <TfiShoppingCart className='carrinho'/>
-                    </div>
+                    <Carrinho/>
                 </div>
             </div>
         </div>
