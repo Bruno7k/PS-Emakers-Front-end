@@ -36,7 +36,7 @@ const Menu =()=> {
                     </div>
                     <div className='barra' />
                     <div className='link'>
-                        <a href='#'>Conta</a>
+                        <Link to={'/inicial'}>Conta</Link>
                     </div>
                 </div>
                 <div className='input'>

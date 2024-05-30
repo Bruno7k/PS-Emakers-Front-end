@@ -7,6 +7,8 @@ import Registrar from "./pages/Registrar/Registrar"
 import Inicial from "./pages/Inicial/Inicial"
 import Promocao from "./pages/Promocao/Promocao"
 import Lancamento from "./pages/Lancamento/Lancamento"
+import Administrador from "./pages/Administrador/Administrador"
+
 function App() {
 
   return (
@@ -18,6 +20,7 @@ function App() {
         <Route path='/inicial' element={<Inicial/>}/>
         <Route path='/promocao' element={<Promocao/>}/>
         <Route path='/lancamento' element={<Lancamento/>}/>
+        <Route path='/administrador' element={<Administrador/>}/>
         <Route path='*' element={<h1>Not Found</h1>}/>
       </Routes>
     </BrowserRouter>

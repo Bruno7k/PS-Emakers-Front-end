@@ -8,6 +8,8 @@ import {MdEdit} from 'react-icons/md'
 import { FaRegTrashAlt } from 'react-icons/fa'
 import Menu from "../../components/menu/menu"
 import Carrinho from "../../components/carrinho/carrinho"
+import { useNavigate } from 'react-router-dom';
+
 function Inicial(){
     const [menuVisivel, setMenuVisivel] = useState(false);
     const [telaVisivel, setTelaVisivel] = useState(false);
@@ -20,10 +22,10 @@ function Inicial(){
         setAlterarVisivel(!alterarVisivel);
     };
 
-    /*const toggleMenu =()=>{
-        setMenuVisivel(!menuVisivel);
-        setTelaVisivel(!telaVisivel);
-    };*/
+    const navigate = useNavigate();
+    const handleAdmin =()=>{
+        return navigate("/administrador");
+    }
 
     return (
         <div className='container2'>
@@ -51,7 +53,7 @@ function Inicial(){
                             <FaRegTrashAlt className='lixo'/>
                         </div>
                         <div className='Tela do admin'>
-                            <button className='tipo2'>Tela do admin </button>
+                            <button className='tipo2' onClick={handleAdmin}>Tela do admin </button>
                         </div>
                     </div>
                 </div>

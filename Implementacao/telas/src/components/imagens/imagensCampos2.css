@@ -37,3 +37,9 @@
     border-radius: 5px;
     font-size: 16px;
 }
+@media screen and (max-width: 1035px){
+    .campo-imagem{
+        height: 50vw;
+        width: 100%;
+    }
+}

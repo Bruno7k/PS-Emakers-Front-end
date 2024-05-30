@@ -10,8 +10,7 @@
     box-shadow: 0px 0.2px 20px #25252556;/*sombra das caixa*/
     outline: none;/*para nao aparcer quando seleciona o campo*/
     box-sizing: border-box;/**/
-    margin-top: 5vh;/*espacar entre as caixas*/
-    
+    margin-top: 5vh;/*espacar entre as caixas*/  
 }
 .inputComponent::placeholder{
     color: #97A4A2;/*cor da letra que fica mostrando*/
