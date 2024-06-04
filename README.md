@@ -1,7 +1,7 @@
 # PS-Emakers-Front-end
 
 ## Descrição
-Minha tarefa é implementar um modelo de site de minha escolha, e implementar no mínimo 5 telas do modelo.
+Minha tarefa é implementar um modelo de site de minha escolha.
 ## As telas implementadas serão:
 ![image](https://github.com/Bruno7k/PS-Emakers-Front-end/assets/106875572/01323de2-478b-4cf0-8357-c16b1810d8aa)
 ![image](https://github.com/Bruno7k/PS-Emakers-Front-end/assets/106875572/0b5d1323-86c0-4921-a7ae-11221b4d5b1b)
