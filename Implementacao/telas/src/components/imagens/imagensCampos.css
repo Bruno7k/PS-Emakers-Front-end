@@ -1,9 +1,18 @@
-.campo-imagem{
+.campo-imagem1{
     position: relative;
     height: 530px;
     width: 900px;
 }
-
+.campo-imagem2{
+    position: relative;
+    height: 479px;
+    width: 814px;
+}
+.campo-imagem3{
+    position: relative;
+    height: 240px;
+    width: 406px;
+}
 .tela{
     height: 100%;
     width: 100%;
@@ -16,7 +25,15 @@
     right: 25px;
     bottom: 20PX;
 }
-.desconto-preco p{
+.desconto-preco3{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap:15px;
+    left: 25px;
+    bottom: 20PX;
+}
+.imagem-desconto{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,9 +42,10 @@
     height: 25px;
     width: 65px;
     font-size: 16px;
+    font-weight: 600;
     border-radius: 5px;
 }
-.desconto-preco p1{
+.imagem-preco{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,4 +54,6 @@
     height: 25px;
     border-radius: 5px;
     font-size: 16px;
+    font-weight: 600;
+    color: #4B626C;
 }

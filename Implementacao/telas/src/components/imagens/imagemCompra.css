@@ -1,0 +1,36 @@
+.foto-preco{
+    display: flex;
+    height: 250px;
+    width: 400px;
+    justify-content: space-between;
+}
+.nome-plataforma{
+    margin-top: 15px;
+}
+.preco-jogo{
+    margin-bottom:5px;
+}
+.nome-preco{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nome-preco h1{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+.nome-preco h2{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+.nome-preco p{
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+}
+.imagem-compra{
+    width: 190px;
+    height: 250px;
+}

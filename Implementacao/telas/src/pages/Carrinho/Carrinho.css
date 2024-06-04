@@ -1,0 +1,203 @@
+.Carrinho{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.carrinho-pagamento{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+.compras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 61%;
+    background-color: #4B626C;
+    gap:60px;
+}
+.card-compras{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.card-imagem-compra{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+}
+.titulo-compra{
+    color:#FBF6F0;
+    font-weight: 500;
+    font-size: 36px;
+    margin-top: 60px;
+    margin-right: 375px;
+}
+.barra-compra{
+    width: 402px;
+    height: 2px;
+    background: #FBF6F0;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+}
+.total p{
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;    
+}
+@media screen and (max-width: 1242px){
+    .titulo-compra{
+        color:#FBF6F0;
+        font-weight: 500;
+        font-size: 36px;
+        margin-top: 60px;
+        margin-right: 0px;
+    }
+}
+@media screen and (max-height: 400px){
+    .carrinho-pagamento{
+        height: auto;
+        
+    }
+}
+.pagamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%; 
+    width: 39%;
+    gap:100px;
+    padding-top: 60px;
+}
+.card-pagamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%; 
+    width: 100%;
+    gap:70px
+}
+.pagamento h1{
+    position: relative;
+    margin-right: 90px;
+    font-size: 36px;
+    font-weight: 500;
+    color:#4B626C;
+}
+.tipo-pagamento{
+    display: flex;
+    flex-direction: row;
+    align-items: second baseline;
+    
+    justify-content: space-between;
+    gap:10px;
+}
+.pix{
+    height: 40px;
+    width: 40px;
+    color:#17bea8;
+}
+.pix-check{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.tipo-pagamento p{
+    font-size: 32px;
+    font-weight: 500;
+    color: #4B626C;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    color:#4B626C;
+    word-break:break-word;
+}
+
+.check {
+    
+    display: none; /* Oculta o checkbox padrão */
+}
+
+.checkbox-custom {
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+    background-color:#A097A4;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.check:checked + .checkbox-custom::after {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    content: '✔';
+    color: #fff;
+}
+
+
+.checkbox-custom2 {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    background-color:#A097A4;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+.check:checked + .checkbox-custom2::after {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    content: '✔';
+    color: #fff;
+}
+.barra-pagamento{
+    width: 71%;
+    height: 2px;
+    background: #4B626C;
+}
+.finalizar button{
+    width: 210px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4B626C;
+    font-size: 20px;
+    font-weight: 500;
+    padding-right: 30px;
+    color: #FBF6F0;
+    font-family: 'Montserrat', sans-serif;
+}
+.finalizar .carrinho3{
+    position:relative;
+    color:#FBF6F0;
+    right: 30px;
+    top: 3px;    
+    font-size: 20px;
+}
+@media screen and (max-width: 1300px){
+    .pagamento h1{
+        margin-right: 0px;
+    }
+}

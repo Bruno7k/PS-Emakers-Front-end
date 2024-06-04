@@ -5,10 +5,10 @@ import icone from '../../imagens/icone.png';
 import { FaSearch } from 'react-icons/fa';
 
 const Menu =()=> {
-    const [menuVisivel, setMenuVisivel] = useState(false);
+    const [visivel, setMenuVisivel] = useState(false);
 
     const toggleMenu = () => {
-        setMenuVisivel(!menuVisivel);
+        setMenuVisivel(!visivel);
     };
 
     return (
@@ -44,7 +44,7 @@ const Menu =()=> {
                     <FaSearch className='lupa' />
                 </div>
             </div>
-            <div className={`menu ${menuVisivel ? "visivel" : ""}`}>
+            <div className={`menu ${visivel ? "visivel" : ""}`}>
                 <button className='hamburguer' onClick={toggleMenu}></button>
                 <nav className='menu2'>
                     <a href='#'>Lançamentos</a>

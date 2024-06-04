@@ -8,8 +8,7 @@
     background-size: contain; /* Redimensiona a imagem para caber no contêiner */
     background-repeat: no-repeat; /* Impede a repetição da imagem */
     background-position: right; /* Posiciona a imagem à direita */
-    background-position: absolute; /* Posiciona a imagem de acordo com o contêiner */
-    background-attachment: auto;
+    background-position: relative; /* Posiciona a imagem de acordo com o contêiner */
 }
 .right-login{
     width: 62%;
@@ -42,7 +41,7 @@
     color: #4B626C;/*cor do escrito*/
     font-weight: 400;/*afina a letra*/
 }
-@media screen and (max-width: 780px){
+@media screen and (max-width: 1146px){
 
     .container{
         background-image: none;
@@ -58,7 +57,7 @@
     .links{
         align-items: center;   
         margin-right: 0%;     
-     }
+    }
     
 }
 @media screen and (max-width: 425px){

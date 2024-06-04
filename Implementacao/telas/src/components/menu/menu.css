@@ -63,7 +63,7 @@
     border-radius: 15px;
     background: #97A4A273;
     color: #97A4A2;/*cor da letra dentro da caixa*/
-    padding: 1vw;/*para o escrito dentro da caixa nao ficar colado na borda*/
+    padding: 10px;/*para o escrito dentro da caixa nao ficar colado na borda*/
     font-size: 20px;/*tamanho da fonte dos escritos dentro da caixa*/
     outline: none;/*para nao aparcer quando seleciona o campo*/
     padding-right: 18%;

@@ -57,6 +57,7 @@
     cursor: pointer;
     text-align: start;
     padding-left: 0.5VW;
+    font-family: 'Montserrat', sans-serif;
 }
 .tipo1{
     background-color:#4B626C;
@@ -92,7 +93,7 @@
     }
     .caixa button{
         width: 135px;
-        font-size: 20px;
+        font-size: 18px;
     }
     .excluir .lixo{
         display: none;
@@ -122,7 +123,6 @@
     height: 72%;
     display: flex;
     flex-direction: column;
-    
 }
 .jogos h2{
     font-size: 18px;
@@ -143,8 +143,7 @@
 .jogo{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;   
 }
 .jogo h2{
     margin-top: 10px;
@@ -156,9 +155,9 @@
 /*func alterar dados*/
 .alterar-dados{
     position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: 5;
+    height: 100vh;
+    width: 100vw;
+    z-index: 6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -174,6 +173,8 @@
     width: 50%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .alterar-dados .dados .altDados{
     border: none;
@@ -194,8 +195,8 @@
 .alterar-dados .sair{
     position:absolute;
     border: none;
-    margin-bottom:700px;
-    margin-right: 90%;
+    top: 1vh;
+    left: 1vw;
     height: 30px;
     width: 30px;
     border-radius: 10px;
@@ -220,6 +221,38 @@
         margin-top: 20%;
     }
     .container2{
+        height: auto;
+    }
+}
+@media screen and (max-height: 970px) and (max-width: 2319px) and (min-width: 1160px){
+    .parte-inferior{
+        height: 100%;
+    }
+    .container2{
+        height: auto;
+    }
+    .caixa{
+        margin-top: 200px;
+    }
+    .card-jogos{
+        margin-top: 130px;   
+    }
+    
+}
+@media screen and (max-height: 600px) and (min-width:2319px) {
+    .parte-inferior{
+        height: 100%;
+    }
+    .container2{
+        height: auto;
+    }
+    .caixa{
+        margin-top: 200px;
+    }
+    .card-jogos{
+        margin-top: 130px;   
+    }
+    .parte-direita{
         height: auto;
     }
 }

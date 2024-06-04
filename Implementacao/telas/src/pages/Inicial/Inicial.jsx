@@ -11,8 +11,6 @@ import Carrinho from "../../components/carrinho/carrinho"
 import { useNavigate } from 'react-router-dom';
 
 function Inicial(){
-    const [menuVisivel, setMenuVisivel] = useState(false);
-    const [telaVisivel, setTelaVisivel] = useState(false);
     const [alterarVisivel, setAlterarVisivel] = useState(false);
     const [nome, setNome] = useState("<<Nome do Usuário>>");
     const [email, setEmail] = useState("nomeusuario@email.com");
@@ -38,7 +36,7 @@ function Inicial(){
                     </div>
             </div>
             <Menu/>
-            <div className={`parte-inferior ${telaVisivel ? "visivel" : ""}`} telaVisivel={telaVisivel}>
+            <div className='parte-inferior' >
                 <div className='parte-esquerda'>
                     <div className='caixa'>
                         <h1>Olá, {nome}</h1>

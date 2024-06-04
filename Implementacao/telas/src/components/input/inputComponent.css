@@ -11,6 +11,7 @@
     outline: none;/*para nao aparcer quando seleciona o campo*/
     box-sizing: border-box;/**/
     margin-top: 5vh;/*espacar entre as caixas*/  
+    font-family: 'Montserrat', sans-serif;
 }
 .inputComponent::placeholder{
     color: #97A4A2;/*cor da letra que fica mostrando*/

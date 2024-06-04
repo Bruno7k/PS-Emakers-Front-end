@@ -5,9 +5,9 @@
     flex-direction: column;
     position: relative;
 }
-.inferior{
+.inferior-promocao{
     width: 100vw;
-    height: 90.2%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,6 +106,14 @@
 .adicionar-carrinho{
     margin-bottom: -15px;
 }
+.carrinho-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
 @media screen and (max-width: 1401px){
     .container3{
         height: 1400px;
@@ -119,4 +127,23 @@
         height: auto;
     }
 
+}
+@media screen and (max-height: 815px){
+    .carrinho-card{
+        height: 815px;
+    }
+    .inferior-promocao{
+        height: auto;
+    }
+}
+@media screen and (max-height: 815px) and (max-width: 1401px){
+    .carrinho-card{
+        height: 815px;
+    }
+    .inferior-promocao{
+        height: 100%;
+    }
+    .carrinho-card{
+        height: 100%;
+    }
 }

@@ -3,8 +3,7 @@ import React, { useState, useEffect } from 'react';
 import tela from '../../imagens/capa-god-of-war.png';
 import horizon from '../../imagens/capa-horizon.png';
 import days from '../../imagens/capa-days-gone.png';
-import Imagens1 from '../../components/imagens/imagensCampos1';
-import Imagens from '../../components/imagens/imagensCampos2';
+import Imagens from '../../components/imagens/imagensCampos'
 import bloodborne from '../../imagens/capa-bloodborne.png'
 import ds2 from '../../imagens/ds2.png'
 import ds1 from '../../imagens/ds1.png'
@@ -76,65 +75,65 @@ export default function Slider() {
         {isMobile ? (
                 <>
                     <SwiperSlide>
-                        <Imagens imagem={days} desconto="-15%" preco="R$ 169,90"/>
+                        <Imagens tipo='tipo3' imagem={days} desconto="-15%" preco="R$ 169,90"/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Imagens imagem={horizon} desconto="-25%" preco="R$ 149,99"/>
+                        <Imagens tipo='tipo3' imagem={horizon} desconto="-25%" preco="R$ 149,99"/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Imagens imagem={bloodborne} desconto="-10%" preco='R$ 139,90'/>
+                        <Imagens tipo='tipo3' imagem={bloodborne} desconto="-10%" preco='R$ 139,90'/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Imagens imagem={ds2} desconto="-15%" preco='R$ 159,80'/>
+                        <Imagens tipo='tipo3' imagem={ds2} desconto="-15%" preco='R$ 159,80'/>
                     </SwiperSlide>
                 </>
             ) : isTablet ? (
                 <>
                     <SwiperSlide>
-                        <Imagens1 imagem={tela} desconto="-40%" preco="R$ 119,95"/>
+                        <Imagens tipo='tipo2' imagem={tela} desconto="-40%" preco="R$ 119,95"/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Imagens1 imagem={ds1} desconto="-40%" preco="R$ 99,90"/>
+                        <Imagens tipo='tipo2' imagem={ds1} desconto="-40%" preco="R$ 99,90"/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Imagens1 imagem={tew} desconto="-30%" preco="R$ 189,90"/>
+                        <Imagens tipo='tipo2' imagem={tew} desconto="-30%" preco="R$ 189,90"/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Imagens1 imagem={got} desconto="-10%" preco="R$ 249,90"/>
+                        <Imagens tipo='tipo2' imagem={got} desconto="-10%" preco="R$ 249,90"/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Imagens1 imagem={otl2} desconto="-85%" preco='R$ 8,54'/>
+                        <Imagens tipo='tipo2' imagem={otl2} desconto="-85%" preco='R$ 8,54'/>
                     </SwiperSlide>
                 </>
             ) : (
                 <>
                     <SwiperSlide>
-                        <Imagens imagem={days} desconto="-15%" preco="R$ 169,90"/>
-                        <Imagens imagem={horizon} desconto="-25%" preco="R$ 149,99"/>
+                        <Imagens tipo='tipo3' imagem={days} desconto="-15%" preco="R$ 169,90"/>
+                        <Imagens tipo='tipo3' imagem={horizon} desconto="-25%" preco="R$ 149,99"/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Imagens1 imagem={tela} desconto="-40%" preco="R$ 119,95"/>
+                        <Imagens tipo='tipo2' imagem={tela} desconto="-40%" preco="R$ 119,95"/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Imagens1 imagem={ds1} desconto="-40%" preco="R$ 99,90"/>
+                        <Imagens tipo='tipo2' imagem={ds1} desconto="-40%" preco="R$ 99,90"/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Imagens imagem={bloodborne} desconto="-10%" preco='R$ 139,90'/>
-                        <Imagens imagem={ds2} desconto="-15%" preco='R$ 159,80'/>
+                        <Imagens tipo='tipo3' imagem={bloodborne} desconto="-10%" preco='R$ 139,90'/>
+                        <Imagens tipo='tipo3' imagem={ds2} desconto="-15%" preco='R$ 159,80'/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Imagens imagem={dmc} desconto='-50%' preco="R$ 50,00"/>
-                        <Imagens imagem={elden} desconto='-5%' preco="R$ 399,89"/>
+                        <Imagens tipo='tipo3' imagem={dmc} desconto='-50%' preco="R$ 50,00"/>
+                        <Imagens tipo='tipo3' imagem={elden} desconto='-5%' preco="R$ 399,89"/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Imagens1 imagem={tew} desconto="-30%" preco="R$ 189,90"/>
+                        <Imagens tipo='tipo2' imagem={tew} desconto="-30%" preco="R$ 189,90"/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Imagens1 imagem={got} desconto="-10%" preco="R$ 249,90"/>
+                        <Imagens tipo='tipo2' imagem={got} desconto="-10%" preco="R$ 249,90"/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Imagens imagem={cls} desconto="-5%" preco='R$ 179,90'/>
-                        <Imagens imagem={mnc} desconto="-15%" preco='R$ 139,90'/>
+                        <Imagens tipo='tipo3' imagem={cls} desconto="-5%" preco='R$ 179,90'/>
+                        <Imagens tipo='tipo3' imagem={mnc} desconto="-15%" preco='R$ 139,90'/>
                     </SwiperSlide>
                 </>
             )}

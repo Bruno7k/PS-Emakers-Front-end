@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: aquamarine;
 }
 .inferior{
     height: 100%;
@@ -28,4 +27,13 @@
     background-color: #4B626C;
     width: 33.3333333333%;
     height: 100%;
+}
+@media screen and (max-height: 890px){
+    .inferior{
+        height: auto;
+    }
+    .Administrador{
+        height: auto;
+    }
+    
 }

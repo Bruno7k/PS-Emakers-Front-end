@@ -15,8 +15,8 @@ function Administrador({ tipo, titulo, nomeBotao }) {
             {tipo === 'tipo1' && (
                 <div className='campo'>
                     <h1 className='titulo1'>{titulo}</h1>
-                    <input className='dados' type='text' placeholder='Título do jogo' />
-                    <input className='dados' type='text' placeholder='Gênero' />
+                    <input className='dados1' type='text' placeholder='Título do jogo' />
+                    <input className='dados1' type='text' placeholder='Gênero' />
                     <div className="textarea-container">
                         <textarea className='descricao' placeholder='Descrição' />
                     </div>
