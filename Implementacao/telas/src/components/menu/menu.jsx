@@ -47,11 +47,11 @@ const Menu =()=> {
             <div className={`menu ${visivel ? "visivel" : ""}`}>
                 <button className='hamburguer' onClick={toggleMenu}></button>
                 <nav className='menu2'>
-                    <a href='#'>Lançamentos</a>
+                    <Link to={'/lancamento'}>Lançamentos</Link>
                     <a href='#'>Populares</a>
                     <a href='#'>Gêneros</a>
                     <Link to={'/promocao'}>Promoções</Link>
-                    <a href='#'>Conta</a>
+                    <Link to={'/inicial'}>Conta</Link>
                 </nav>
             </div>
         </div>

@@ -9,12 +9,14 @@ import { FaRegTrashAlt } from 'react-icons/fa'
 import Menu from "../../components/menu/menu"
 import Carrinho from "../../components/carrinho/carrinho"
 import { useNavigate } from 'react-router-dom';
+import Modal from '../../components/modal/modal'
 
 function Inicial(){
     const [alterarVisivel, setAlterarVisivel] = useState(false);
     const [nome, setNome] = useState("<<Nome do Usuário>>");
     const [email, setEmail] = useState("nomeusuario@email.com");
     const [CPF, setCPF] = useState("123.456.789-00");
+    const [openModal, setOpenModal] = useState(false);
 
     const toggleDados =()=>{
         setAlterarVisivel(!alterarVisivel);
@@ -43,14 +45,12 @@ function Inicial(){
                         <h2>Seu email é {email}</h2>
                         <h2>Seu CPF é {CPF}</h2>
                         <div className='alterar'>
-                            <button onClick={toggleDados} className='tipo1'>Alterar Dados </button>
-                            <MdEdit className='alterar'/>
+                            <button onClick={toggleDados} className='tipo1'>Alterar Dados <MdEdit className='alterar-icon'/></button>
                         </div>
                         <div className='excluir'>
-                            <button className='tipo1'>Excluir Conta </button>
-                            <FaRegTrashAlt className='lixo'/>
+                            <button className='tipo1' onClick={() => setOpenModal(true)}>Excluir Conta <FaRegTrashAlt className='lixo-icon'/></button>
                         </div>
-                        <div className='Tela do admin'>
+                        <div className='botao-admin'>
                             <button className='tipo2' onClick={handleAdmin}>Tela do admin </button>
                         </div>
                     </div>
@@ -79,6 +79,7 @@ function Inicial(){
                     </div>
                     <Carrinho/>
                 </div>
+                <Modal isOpen={ openModal } setModalClose={() => setOpenModal(!openModal)}/>
             </div>
         </div>
     );

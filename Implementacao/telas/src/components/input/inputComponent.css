@@ -12,7 +12,11 @@
     box-sizing: border-box;/**/
     margin-top: 5vh;/*espacar entre as caixas*/  
     font-family: 'Montserrat', sans-serif;
+    transition: 0.5s;
 }
 .inputComponent::placeholder{
     color: #97A4A2;/*cor da letra que fica mostrando*/
+}
+.inputComponent:hover{
+    transform: scale(1.1);
 }

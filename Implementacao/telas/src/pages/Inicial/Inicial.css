@@ -58,24 +58,29 @@
     text-align: start;
     padding-left: 0.5VW;
     font-family: 'Montserrat', sans-serif;
+    transition: 0.5s;
 }
+
+.caixa button:hover{
+    transform: scale(1.05);
+}
+
 .tipo1{
     background-color:#4B626C;
 }
-.excluir .lixo{
-    position: relative;
-    right: -215px;
-    bottom: 35px;
-    font-size: 25px;
-    color: #FBF6F0;
-}
-.alterar .alterar{
-    position: relative;
-    right: -215px;
-    bottom: 35px;
-    font-size: 25px;
-    color: #FBF6F0;
 
+.alterar, .excluir {
+    .tipo1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .alterar-icon, .lixo-icon{
+            font-size: 25px;
+            color: #FBF6F0;
+            margin-right: 5px;
+        }
+    }
 }
 .tipo2{
     background: #5c666473;
@@ -92,14 +97,8 @@
         justify-content: space-evenly;
     }
     .caixa button{
-        width: 135px;
+        width: 160px;
         font-size: 18px;
-    }
-    .excluir .lixo{
-        display: none;
-    }
-    .alterar .alterar{
-        display: none;
     }
 }
 .parte-direita{
@@ -131,6 +130,11 @@
 .img-jogo{
     height: 250px;
     width: 190px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.img-jogo:hover{
+    transform: scale(1.1);
 }
 .jogos{
     width: 100%;

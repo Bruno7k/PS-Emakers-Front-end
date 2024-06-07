@@ -2,16 +2,25 @@
     position: relative;
     height: 530px;
     width: 900px;
+    transition: 0.5s;
+    cursor: pointer;
 }
 .campo-imagem2{
     position: relative;
     height: 479px;
     width: 814px;
+    transition: 0.5s;
+    cursor: pointer;
 }
 .campo-imagem3{
     position: relative;
     height: 240px;
     width: 406px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.campo-imagem1:hover,.campo-imagem2:hover, .campo-imagem3:hover{
+    transform: scale(1.01);
 }
 .tela{
     height: 100%;

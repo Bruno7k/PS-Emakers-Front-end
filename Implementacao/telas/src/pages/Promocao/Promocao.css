@@ -73,7 +73,9 @@
 .botoes-texto{
     display: flex;
     flex-direction: column;
-    
+    gap:20px;
+    margin-bottom: 20px;
+    margin-top: -15px;
 }
 .botoes-texto button{
     width: 230px;
@@ -84,21 +86,27 @@
     font-size: 16px;
     font-weight: 500;
     padding-right: 40px;
+    cursor: pointer;
+    transition: 0.5s;
 }
-.botoes-texto .carrinho1{
-    position:relative;
-    color:#4B626C;
-    left: 200px;
-    bottom:12px;    
-    font-size: 20px;
+.botoes-texto button:hover{
+    transform: scale(1.05);
 }
-.botoes-texto .carrinho2{
-    position:relative;
-    color:#4B626C;
-    left: 200px;
-    bottom:7px;    
-    font-size: 20px;
+.botoes-texto{
+    .adicionar-carrinho, .solicitar-reembolso{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 15px;
+        justify-content: space-between;
+        .carrinho1{
+            font-size: 20px;
+            color:#4B626C;
+            margin-right: -25px;
+        }
+    }
 }
+
 .solicitar-reembolso{
     opacity: 60%;
     margin-bottom: -20px;
@@ -113,6 +121,13 @@
     height: 100%;
     width: 100%;
     position: relative;
+}
+.animacao-promocao{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.animacao-promocao:hover{
+    transform: scale(1.05);
 }
 @media screen and (max-width: 1401px){
     .container3{

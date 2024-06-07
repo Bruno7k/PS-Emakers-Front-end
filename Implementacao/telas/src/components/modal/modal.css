@@ -1,0 +1,47 @@
+.blur{
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transition: opacity 300ms;
+}
+.modal{
+    position: absolute;
+    z-index: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(75, 98, 108,1);
+    width: 50vw;
+    height: 30vh;
+    top: 35%;
+    left: 25%;
+    border-radius: 20px;
+}
+.texto-modal{
+    font-size: 30px;
+    color: #FBF6F0;
+    margin-bottom: 50px;
+}
+.botao-modal{
+    display: flex;
+    gap:40px;
+}
+.botao-modal button{
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #6e7776;
+    transition: 0.5s;
+}
+.botao-modal button:hover{
+    transform: scale(1.05);
+}

@@ -21,7 +21,13 @@
 .swiper-button-next,
 .swiper-button-prev{
     color:#97A4A2;
+    transition: 0.5s;
 }
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+    transform: scale(1.1);
+}
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 80px; /* Ajuste o tamanho se necessário */

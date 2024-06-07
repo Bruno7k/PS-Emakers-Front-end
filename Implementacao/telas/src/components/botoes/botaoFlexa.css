@@ -8,4 +8,8 @@
     border-radius: 5px;/*a borda ter volta*/
     background-color: transparent;
     margin-left: auto;
+    transition: 0.5s;
+}
+.flecha:hover{
+    transform: scale(1.1);
 }

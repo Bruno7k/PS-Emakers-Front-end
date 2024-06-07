@@ -51,6 +51,24 @@
     font-size: 32px;
     font-weight: 300;
     line-height: 39.01px;
+    position: relative;
+}
+.link a::after{
+    content: ' ';
+    width: 0%;
+    height: 1px;
+    background-color: #4B626C;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link a:hover::after{
+    width: 100%;
 }
 .input{
     display: flex;
@@ -67,6 +85,10 @@
     font-size: 20px;/*tamanho da fonte dos escritos dentro da caixa*/
     outline: none;/*para nao aparcer quando seleciona o campo*/
     padding-right: 18%;
+    transition: 0.5s;
+}
+.input input:hover{
+    transform: scale(1.05);
 }
 .input .lupa{
     position: relative;
@@ -124,6 +146,10 @@
         nav a{
             text-decoration: none;
             color : #fff;
+            transition: 0.5s;
+        }
+        nav a:hover{
+            transform:scale(1.1);
         }
     }
     .menu .hamburguer{

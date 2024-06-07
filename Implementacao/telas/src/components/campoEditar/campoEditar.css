@@ -24,6 +24,10 @@
     font-size: 24px;
     font-weight: 300;
     padding: 1vw;
+    transition: 0.5s;
+}
+.dados1:hover{
+    transform: scale(1.03);
 }
 .dados1::placeholder{
     color: #97A4A2;
@@ -41,6 +45,10 @@
     padding:1vw;
     font-size: 24px;
     font-weight: 300;
+    transition: 0.5s;
+}
+.descricao:hover{
+    transform: scale(1.03);
 }
 .descricao::placeholder{
     color: #97A4A2;
@@ -60,6 +68,10 @@
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
     color:#97A4A2;
+    transition: 0.5s;
+}
+.upload-button:hover{
+    transform: scale(1.03);
 }
 .cadastrar{
     font-family: 'Montserrat', sans-serif;
@@ -73,6 +85,10 @@
     font-weight: 400;
     font-size: 30px;
     cursor: pointer;
+    transition: 0.5s;
+}
+.cadastrar:hover{
+    transform: scale(1.03);
 }
 .titulo2{
     color: #4B626C;
@@ -91,6 +107,10 @@
     font-size: 24px;
     font-weight: 300;
     padding: 1vw;
+    transition: 0.5s;
+}
+.dados2:hover{
+    transform: scale(1.03);
 }
 .dados2::placeholder{
     color: #FFFFFF;
@@ -108,6 +128,10 @@
     font-weight: 400;
     font-size: 30px;
     cursor: pointer;
+    transition: 0.5s;
+}
+.cadastrar2:hover{
+    transform: scale(1.03);
 }
 @media screen and (max-width: 1315px){
     .cadastrar{

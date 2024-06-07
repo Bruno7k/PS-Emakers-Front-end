@@ -14,8 +14,10 @@ function Promocao(){
             <div className='inferior-promocao'>
                 <div className='carrinho-card'>
                     <div className="card-inferior">
-                        <div className="bola"><p>98%</p></div>
-                        <Imagens tipo='tipo1' imagem={tela} desconto="-40%" preco="R$ 119,95"/>
+                        <div className='animacao-promocao'>
+                            <div className="bola"><p>98%</p></div>
+                            <Imagens tipo='tipo1' imagem={tela} desconto="-40%" preco="R$ 119,95"/>
+                        </div>
                         <div className="campo-texto">
                             <h1>God of War</h1>
                             <div className='historia'>
@@ -27,10 +29,8 @@ function Promocao(){
                             </div>
                             <div className="barra-texto"/>
                             <div className="botoes-texto">
-                                <button className="adicionar-carrinho">Adicionar ao Carrinho</button>
-                                <PiShoppingCartSimpleFill className="carrinho1"/>
-                                <button className="solicitar-reembolso">Solicitar Reembolso</button>
-                                <PiShoppingCartSimpleFill className="carrinho2"/>
+                                <button className="adicionar-carrinho">Adicionar ao Carrinho  <PiShoppingCartSimpleFill className="carrinho1"/></button>
+                                <button className="solicitar-reembolso">Solicitar Reembolso<PiShoppingCartSimpleFill className="carrinho1"/></button>
                             </div>
                         </div>
                     </div>
