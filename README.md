@@ -1,7 +1,7 @@
 # PS-Emakers-Front-end
 
 ## Descrição
-Minha tarefa é implementar um modelo de site de minha escolha, e implementar no mínimo 5 telas do modelo.
+Minha tarefa é implementar um modelo de site de minha escolha.
 ## As telas implementadas serão:
 ![image](https://github.com/Bruno7k/PS-Emakers-Front-end/assets/106875572/01323de2-478b-4cf0-8357-c16b1810d8aa)
 ![image](https://github.com/Bruno7k/PS-Emakers-Front-end/assets/106875572/0b5d1323-86c0-4921-a7ae-11221b4d5b1b)
@@ -9,6 +9,9 @@ Minha tarefa é implementar um modelo de site de minha escolha, e implementar no
 ![image](https://github.com/Bruno7k/PS-Emakers-Front-end/assets/106875572/aed9ecd5-41e1-42c6-a7af-e96d0e2be8ed)
 ![image](https://github.com/Bruno7k/PS-Emakers-Front-end/assets/106875572/fa1c69db-a5c9-42c8-8d09-af1e9119a2fb)
 ![image](https://github.com/Bruno7k/PS-Emakers-Front-end/assets/106875572/25a98237-499e-43e7-a278-3ab78067197c)
+![image](https://github.com/Bruno7k/PS-Emakers-Front-end/assets/106875572/677a8d7a-fafc-4a9f-ad7f-58f5431493f2)
+![image](https://github.com/Bruno7k/PS-Emakers-Front-end/assets/106875572/7cfc60b3-670f-4885-a0b7-b658c9ff205d)
+
 ## Tarefas
  - Implementar as telas escolhidas.
  - Aplicar interações/animações a botões, barras de pesquisas, entre outros, a fim de que a interação do usuário seja melhor.
