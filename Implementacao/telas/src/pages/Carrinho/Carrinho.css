@@ -141,7 +141,6 @@
     justify-content: center;
     transition: background-color 0.2s, border-color 0.2s;
 }
-
 .check:checked + .checkbox-custom::after {
     display: flex;
     align-items: center;
@@ -188,13 +187,21 @@
     padding-right: 30px;
     color: #FBF6F0;
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5px;
+    transition: 0.5s;
 }
 .finalizar .carrinho3{
     position:relative;
-    color:#FBF6F0;
-    right: 30px;
-    top: 3px;    
+    color:#FBF6F0;   
     font-size: 20px;
+    margin-right: -20px;
+}
+.finalizar button:hover{
+    transform: scale(1.05);
 }
 @media screen and (max-width: 1300px){
     .pagamento h1{

@@ -9,6 +9,8 @@ import Promocao from "./pages/Promocao/Promocao"
 import Lancamento from "./pages/Lancamento/Lancamento"
 import Administrador from "./pages/Administrador/Administrador"
 import Carrinho from "./pages/Carrinho/Carrinho"
+import Generos from "./pages/Generos/Generos"
+import Populares from "./pages/Populares/Populares"
 function App() {
 
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path='/lancamento' element={<Lancamento/>}/>
         <Route path='/administrador' element={<Administrador/>}/>
         <Route path='/carrinho' element={<Carrinho/>}/>
+        <Route path='/genero' element={<Generos/>}/>
+        <Route path='/popular' element={<Populares/>}/>
         <Route path='*' element={<h1>Not Found</h1>}/>
       </Routes>
     </BrowserRouter>

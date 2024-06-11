@@ -61,8 +61,7 @@ function Carrinho(){
                         </label>
                         </div>
                         <div className='finalizar'>
-                            <button className="finalizar-compra">Finalizar Compra</button>
-                            <PiShoppingCartSimpleFill className="carrinho3"/>
+                            <button className="finalizar-compra">Finalizar Compra<PiShoppingCartSimpleFill className="carrinho3"/></button>
                         </div>
                     </div>
                 </div>

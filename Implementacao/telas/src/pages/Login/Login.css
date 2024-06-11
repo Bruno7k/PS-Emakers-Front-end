@@ -10,10 +10,7 @@
     background-position: right; /* Posiciona a imagem à direita */
     background-position: relative; /* Posiciona a imagem de acordo com o contêiner */
 }
-.right-login{
-    width: 62%;
-    align-items: flex-end;
-}
+
 .left-login{
     display: flex;/*coloca tudo em fila*/
     flex-direction: column;/*coloca em coluna*/
@@ -66,4 +63,11 @@
         height: 350px;
         width: 90%;
     }
+}
+@media screen and (max-height:1024){
+    .container{
+        height: auto;
+        background-position: fixed;
+    }
+    
 }

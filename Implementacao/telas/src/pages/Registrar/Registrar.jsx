@@ -14,7 +14,9 @@ function Registrar (){
                     <Input tipo="password" placeholder="Senha"/>   
                     <Input tipo="password" placeholder="Confirmar Senha"/>      
                     <Botao/>  
-                    <LinkComponent rota='/' nome='Fazer Login'></LinkComponent>
+                    <div className='links'>
+                        <LinkComponent rota='/' nome='Fazer Login'></LinkComponent>
+                    </div>
                 </div>
             </div>
         </div>

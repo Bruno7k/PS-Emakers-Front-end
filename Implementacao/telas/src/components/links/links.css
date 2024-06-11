@@ -2,7 +2,22 @@
     color: #97A4A2;
     text-decoration: none;
     font-weight: 700;
+    transition: 0.5s;
+    position: relative;
 }
 .links::a{
     text-decoration: underline;
+}
+.links a::after{
+    content: ' ';
+    height: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #97A4A2;
+    width: 0%;
+    transition: 0.5s;
+}
+.links a:hover::after{
+    width: 100%;
 }

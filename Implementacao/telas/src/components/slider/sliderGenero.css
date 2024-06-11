@@ -1,0 +1,27 @@
+.swiperGenero {
+    width: 95%;
+    height: 300px;
+    display: flex;
+} 
+.swiper-wrapper {
+    width: 100%;
+}
+.slideGenero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:250px;
+    width: 190px;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+}  
+.slideGenero:hover{
+    transform: scale(1.05);
+}
+.slideGenero img {
+    display: block;
+    height:250px;
+    width: 190px;
+    object-fit: cover;
+}

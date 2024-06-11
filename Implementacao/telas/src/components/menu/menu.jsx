@@ -24,11 +24,11 @@ const Menu =()=> {
                     </div>
                     <div className='barra' />
                     <div className='link'>
-                        <a href='#'>Populares</a>
+                        <Link to={'/popular'}>Populares</Link>
                     </div>
                     <div className='barra' />
                     <div className='link'>
-                        <a href='#'>Gêneros</a>
+                        <Link to={'/genero'}>Gêneros</Link>
                     </div>
                     <div className='barra' />
                     <div className='link'>
@@ -48,8 +48,8 @@ const Menu =()=> {
                 <button className='hamburguer' onClick={toggleMenu}></button>
                 <nav className='menu2'>
                     <Link to={'/lancamento'}>Lançamentos</Link>
-                    <a href='#'>Populares</a>
-                    <a href='#'>Gêneros</a>
+                    <Link to={'/popular'}>Populares</Link>
+                    <Link to={'/genero'}>Gêneros</Link>
                     <Link to={'/promocao'}>Promoções</Link>
                     <Link to={'/inicial'}>Conta</Link>
                 </nav>

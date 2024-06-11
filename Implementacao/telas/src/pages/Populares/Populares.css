@@ -1,0 +1,38 @@
+.popular{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.popular-inferior{
+    background-color: #4B626C;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 70%;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+.card-popular{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    gap:60px;
+}
+.card-popular h1{
+    font-size: 32px;
+    font-weight: 300;
+    color:#FBF8F3;
+    position: relative;
+}
+.margem::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -7px; /* Ajuste esta posição conforme necessário */
+    width: 160px;
+    height: 2px; /* Espessura do sublinhado */
+    background-color: #FBF8F3; /* Cor do sublinhado */
+}

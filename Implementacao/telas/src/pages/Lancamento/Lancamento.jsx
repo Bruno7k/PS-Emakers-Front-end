@@ -18,7 +18,7 @@ function Lancamento() {
                     <div className="card-lancamento">
                         <h1>Lançamentos</h1>
                         <div className="jogos-lancamentos">
-                            <Jogos/>
+                            <Jogos tipo='tipo1'/>
                         </div>
                     </div>
                     <Carrinho/>

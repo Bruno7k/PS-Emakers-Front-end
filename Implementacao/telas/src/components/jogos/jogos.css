@@ -7,3 +7,13 @@
     height: 100%;
     width: 100%;
 }
+.cards2{
+    display: grid;
+    overflow-y: hidden;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 30px;
+}

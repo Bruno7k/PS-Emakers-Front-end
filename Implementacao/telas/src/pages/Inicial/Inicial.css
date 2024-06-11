@@ -192,6 +192,10 @@
     color: #97A4A2;
     box-shadow: 0px 15px 10px #00000056;
     margin-top: 5vh;
+    transition: 0.5s;
+}
+.altDados:hover{
+    transform: scale(1.03);
 }
 .altDados::placeholder{
     color: #97A4A2;
@@ -204,7 +208,12 @@
     height: 30px;
     width: 30px;
     border-radius: 10px;
-    font-size: 20px
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.alterar-dados .sair:hover{
+    transform: scale(1.1);
 }
 .alterar-dados.visivel{
     clip-path: circle(3800px at 10% 1%);
