@@ -8,7 +8,6 @@
     background-size: contain; /* Redimensiona a imagem para caber no contêiner */
     background-repeat: no-repeat; /* Impede a repetição da imagem */
     background-position: right; /* Posiciona a imagem à direita */
-    background-position: relative; /* Posiciona a imagem de acordo com o contêiner */
 }
 
 .left-login{
@@ -63,11 +62,4 @@
         height: 350px;
         width: 90%;
     }
-}
-@media screen and (max-height:1024){
-    .container{
-        height: auto;
-        background-position: fixed;
-    }
-    
 }

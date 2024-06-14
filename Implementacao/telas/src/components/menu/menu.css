@@ -155,8 +155,7 @@
     .menu .hamburguer{
         position: absolute;
         top: 2.5rem;
-        left: 1.9rem;
-        
+        left: 1.9rem;        
     }
     .menu.visivel{
         opacity: 1;

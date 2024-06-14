@@ -59,12 +59,13 @@
         margin-right: 0px;
     }
 }
-@media screen and (max-height: 400px){
+@media screen and (max-height: 870px){
     .carrinho-pagamento{
         height: auto;
         
     }
 }
+
 .pagamento{
     display: flex;
     flex-direction: column;
