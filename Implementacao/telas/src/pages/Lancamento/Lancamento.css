@@ -3,6 +3,7 @@
     width: 100vw;/*largura no monitor todo*/
     display: flex;/*faz com que as coisas fiquem lado a lado*/
     flex-direction: column;
+    overflow-x: hidden;
 }
 .parte-menu{
     display: flex;
